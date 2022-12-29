@@ -112,7 +112,7 @@ double randd(void);    // Random double between 0 and 1
 #define PEP_RMRW  (pow(pep->length,1/2.0))  // The relationship between the movement of a peptide and its mass
 
 struct rna           // RNA (a nucleotide can be deemed as an RNA of length 1)
-{                   // In the following annotations,"RNA" would include nucleotides, unless being be explicitly distinguished.
+{                   // In the following annotations,"RNA" would include nucleotides, unless being explicitly distinguished.
     char information[2][MAX_RNA_LENGTH];
     int length1;
     int length2;
@@ -129,7 +129,7 @@ struct rna* p, * p1, * p2, * p3, * p4, * ps, * ps1, * ps2;
 struct rna* rna_arr[MAX_RNA_NUM_IN_GRIDROOM];
 
 struct peptide     // Peptide (an amino acid can be deemed as a peptide of length 1)
-{                  // In the following annotations,"peptides" would include amino acids, unless being be explicitly distinguished.
+{                  // In the following annotations,"peptides" would include amino acids, unless being explicitly distinguished.
     char information[PEP_LENGTH];
     int length;
     int men;   // The status of the peptide --- 2: binding with RNA; 1: within the menbrane;  0: free.
